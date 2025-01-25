@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../common.css'
+import Image from 'next/image'
+import blogImg from '../assets/heroImg.png'
 
 const Page = () => {
   return (
@@ -15,7 +17,18 @@ const Page = () => {
           <i className='devicon-dot-net-plain text-3xl'></i>
         </span>
       </div>
-      <div className='section-3 rounded-xl m-4 bg-white p-4'>publications</div>
+      <div className='section-3 rounded-xl m-4 bg-white p-4'>
+        <div className='bg-slate-50 h-[10rem] rounded-lg flex'>
+          <Image src={blogImg} alt='blog' className='rounded-lg w-vw h-auto'/>
+          <div></div>
+        </div>
+        <div>
+          blog
+        </div>
+        <div>
+          blog
+        </div>
+      </div>
       <div className='section-1 rounded-xl m-4 bg-white p-4'>footer</div>
     </>
   )
