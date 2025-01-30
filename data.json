@@ -1,14 +1,40 @@
 {
     "projects": [
         {
-            "title": "Coffe Shop Ordering System",
-            "Description": "The Coffee Shop Ordering System is a multithreaded application designed to manage and streamline the daily operations of a coffee shop. It facilitates customer orders, inventory management, employee scheduling, and sales tracking in a simulated environment. The system is built using Java, leveraging multithreading to handle concurrent operations such as order processing, inventory updates, and customer interactions in a seamless and efficient manner.",
-            "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem"
+            "title": "Cafe Flair",
+            "Description": "This Coffee Shop Ordering System is a multithreaded application to streamline daily operations, including customer orders, inventory management, employee scheduling, and sales tracking. Built with Java, it uses multithreading for tasks like order processing, inventory updates.",
+            "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem",
+            "img": "/images/cafeflair.png"
         },
         {
             "title": "Banking Transaction System",
-            "Description": "The Multithreaded Banking Transaction System is a Java-based application designed to simulate a real-world banking environment where multiple customers can perform banking transactions simultaneously. The system uses multithreading to handle concurrent transactions such as deposits, withdrawals, and balance inquiries efficiently, ensuring smooth operation even during peak times.",
-            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem"
+            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. It supports simultaneous transactions like deposits, withdrawals, and balance inquiries using multithreading, ensuring efficient handling and smooth operation during peak times.",
+            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
+            "img" : "/images/cafeflair.png"
         }
-    ]
+    ],
+    "blogs": [
+    {
+        "id" : 1,
+        "title": "Elasticsearch",
+        "description": "Elasticsearch is a distributed search and analytics engine.",
+        "img": "/images/elastic.png",
+        "link" :"https://github.com/Kaveeshakavindi/BankingTransactionSystem"
+    },
+    {
+        "id": 2,
+        "title": "Elasticsearch",
+        "description": "Elasticsearch is a distributed search and analytics engine.",
+        "img": "/images/elastic.png",
+        "link" :"https://github.com/Kaveeshakavindi/BankingTransactionSystem" 
+    },
+    {
+        "id": 3,
+        "title": "Elasticsearch",
+        "description": "Elasticsearch is a distributed search and analytics engine.",
+        "img": "/images/elastic.png",
+        "link" :"https://github.com/Kaveeshakavindi/BankingTransactionSystem" 
+    }
+]
+
 }

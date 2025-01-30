@@ -4,10 +4,14 @@ import Image from 'next/image'
 import blogImg from '../assets/heroImg.png'
 import BlogCard from '@/components/blogCard'
 import data from '../../data.json'
+import Link from 'next/link'
+import MiniCard from '@/components/miniCard'
 const Page = () => {
   return (
     <>
-      <div className='section-1 rounded-xl m-4 bg-white p-4'>home</div>
+      <div className='section-1 rounded-xl m-4 bg-white p-4'>
+        
+      </div>
       <div className='marquee rounded-xl m-4 bg-white p-4 '>
         <span className='w-full flex'>
           <i className='devicon-postgresql-plain text-3xl'></i>
@@ -18,8 +22,27 @@ const Page = () => {
           <i className='devicon-dot-net-plain text-3xl'></i>
         </span>
       </div>
+
+      {/**Blogs */}
       <div className='section-3 rounded-xl m-4 bg-white p-4'>
-        
+      <div className='m-4 font-bold text-lg'>Blogs</div>
+        <div className='flex justify-between'>
+          {data.blogs.map((blog, index)=> (
+            <MiniCard 
+            key={index}
+            image={blog.img}
+            title={blog.title}
+            description={blog.description}
+            />
+          ))}
+            
+        </div>
+        <div className='m-4 text-xs text-right text-gray-400'>
+          <Link href='/blog'>See more </Link></div>
+        </div>
+        {/**projects */}
+        <div className='section-3 rounded-xl m-4 bg-white p-4'>
+        <div className='m-4 font-bold text-lg'>Projects</div>
         <div>
           {data.projects.map((project, index) => (
             <BlogCard 
@@ -27,10 +50,14 @@ const Page = () => {
             title={project.title}
             description={project.Description}
             link={project.link}
+            image={project.img}
             />
           ))}
         </div>
+        <div className='m-4 text-xs text-right text-gray-400'>
+          <Link href='/work'>See more </Link></div>
       </div>
+      
       <div className='section-1 rounded-xl m-4 bg-white p-4'>footer</div>
     </>
   )
