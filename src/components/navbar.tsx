@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PiScribbleDuotone } from "react-icons/pi";
 const Navbar = () => {
   const pathname = usePathname();
   const navItems = [
@@ -14,7 +15,9 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center p-4 top-0 rounded-3xl m-4 bg-white">
       <div>
-        <a href="/">#</a>
+        <a href="/" className="flex items-center justify-center ">
+          <PiScribbleDuotone /> Kaveesha
+        </a>
       </div>
       <div className="">
         {navItems.map((item, key) => (

@@ -1,24 +1,40 @@
 import React from "react";
 import "../../common.css";
-import Image from "next/image";
-import blogImg from "../assets/heroImg.png";
 import BlogCard from "@/components/blogCard";
 import data from "../../data.json";
 import Link from "next/link";
 import MiniCard from "@/components/miniCard";
+import { PiRocketLaunchLight } from "react-icons/pi";
+import { PiAtomLight } from "react-icons/pi";
+import { PiMusicNotesLight } from "react-icons/pi";
 const Page = () => {
   return (
     <>
-      <div className="section-1 rounded-xl m-4 bg-white p-4"></div>
-      <div className="marquee rounded-xl m-4 bg-white p-4 ">
-        <span className="w-full flex">
-          <i className="devicon-postgresql-plain text-3xl"></i>
-          <i className="devicon-dynamodb-plain text-3xl"></i>
-          <i className="devicon-mongodb-plain text-3xl"></i>
-          <i className="devicon-dot-net-plain text-3xl"></i>
-          <i className="devicon-dot-net-plain text-3xl"></i>
-          <i className="devicon-dot-net-plain text-3xl"></i>
-        </span>
+      {/**hero section */}
+      <div className="section-1 rounded-xl m-4 bg-white p-4 relative h-[50vh] flex justify-center flex-col">
+        <div className="text-xs text-gray-400 text-center">
+          THROUGH LENS OF DISCOVERY
+        </div>
+        <div className="flex justify-center w-full items-center ">
+          <div className="py-10 max-lg:text-3xl lg:text-5xl max-lg:w-[75%] lg:w-[50%] items-center text-center">
+            Engineer stories that
+            <span className="inline-flex">
+              <PiRocketLaunchLight className="text-rose-400 ml-2" />
+            </span>
+            inspire,
+            <span className="inline-flex">
+              <PiAtomLight className="text-blue-400 ml-2" />
+            </span>
+            educate, and{" "}
+            <span className="inline-flex">
+              <PiMusicNotesLight className="text-green-400 ml-2" />
+            </span>{" "}
+            entertain
+          </div>
+        </div>
+        <p className="text-center text-gray-400 text-[8px]">
+          Kaveesha Fernando Portfolio &copy; 2025
+        </p>
       </div>
 
       {/**Blogs */}
@@ -57,8 +73,6 @@ const Page = () => {
           <Link href="/work">See more </Link>
         </div>
       </div>
-
-      <div className="section-1 rounded-xl m-4 bg-white p-4">footer</div>
     </>
   );
 };

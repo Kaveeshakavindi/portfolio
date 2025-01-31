@@ -32,7 +32,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   }
 
   return (
-    <div className="flex flex-col items-center p-[2rem]">
+    <div className="flex flex-col items-center p-[2rem] p-4 rounded-3xl m-4 bg-white">
       <div className="bg-slate-200 px-5 py-2 rounded-3xl inline-block my-4 text-xs text-slate-500">
         source
       </div>
@@ -42,7 +42,7 @@ export default function BlogPage({ params }: BlogPageProps) {
 
       <div className="grid grid-cols-4 gap-20 w-full">
         <div className="col-span-1 ">
-          <ul className="fixed  max-lg:w-[150px] lg:w-full">
+          <ul className="fixed max-lg:w-[150px] lg:w-full top-[250px]">
             {blog.content.map((item, index) => (
               <li className="text-xs pb-2 text-slate-400" key={index}>
                 {item.caption}
