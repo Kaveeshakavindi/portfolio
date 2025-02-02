@@ -1,28 +1,38 @@
-import React from 'react'
-import Image from 'next/image'
-import blogImg from '../assets/heroImg.png'
+import React from "react";
+import Image from "next/image";
 
 interface BlogCardProps {
-    title: string;
-    description: string;
-    link: string;
-    image: string
-  }
-
-const blogCard: React.FC<BlogCardProps>= ({title, description, link, image}) => {
-    return (
-        <a href={link}>
-        <div className='bg-white h-[10rem] rounded-lg flex relative '>
-            <div className='bg-slate-50 rounded-lg flex relative m-1 w-full'>
-            <Image src={image} alt="blog" width={120} height={100} className="rounded-lg m-4" />
-            <div className='flex flex-col justify-between m-1 p-4 '>
-                    <h1 className='font-bold md:text-lg lg:text-lg xl:text-lg '>{title}</h1>
-                    <p className='text-justify text-xs text-gray-400 md:text-xs lg:text-sm xl:text-lg '>{description}</p>
-                </div>
-            </div>
-        </div>
-        </a>
-    )
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+  lang: string;
 }
 
-export default blogCard
+const blogCard: React.FC<BlogCardProps> = ({
+  title,
+  description,
+  link,
+  image,
+  lang,
+}) => {
+  return (
+    <a href={link}>
+      <div className="flex items-center border border-slate-200 bg-slate-50 h-[12rem] rounded-lg flex relative m-4 p-5 hover:shadow-md hover:shadow-blue-400/20">
+        <div className="rounded-lg flex relative ">
+          <div className="h-full flex m-1 p-4 flex-col">
+            <p className="uppercase text-[10px] font-bold pb-2 text-indigo-500">
+              built with {lang}
+            </p>
+            <h1 className="text-sm font-bold flex text-left w-full">{title}</h1>
+            <p className="text-justify text-xs text-gray-400 py-[3px]">
+              {description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+export default blogCard;

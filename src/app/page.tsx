@@ -7,6 +7,7 @@ import MiniCard from "@/components/miniCard";
 import { PiRocketLaunchLight } from "react-icons/pi";
 import { PiAtomLight } from "react-icons/pi";
 import { PiMusicNotesLight } from "react-icons/pi";
+import Timeline from "@/components/timeline";
 const Page = () => {
   return (
     <>
@@ -36,11 +37,10 @@ const Page = () => {
           Kaveesha Fernando Portfolio &copy; 2025
         </p>
       </div>
-
       {/**Blogs */}
-      <div className="section-3 rounded-xl m-4 bg-white p-4">
+      <div className="section-3 rounded-xl m-4 bg-white p-10">
         <div className="m-4 font-bold text-lg">Blogs</div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid  max-md:grid-cols-1 max-lg:grid-cols-3 lg:grid-cols-3 gap-4 ">
           {data.blogs.slice(0, 3).map((blog, index) => (
             <MiniCard
               key={index}
@@ -48,6 +48,7 @@ const Page = () => {
               title={blog.title}
               description={blog.subtitle}
               id={blog.id}
+              tags={blog.tags}
             />
           ))}
         </div>
@@ -55,24 +56,34 @@ const Page = () => {
           <Link href="/blog">See more </Link>
         </div>
       </div>
+      {/**expereince */}
+      <div className="section-3 rounded-xl m-4 bg-white p-10">
+        <div className="m-4 font-bold text-lg">Experience</div>
+        <Timeline />
+      </div>
+      {/**services / tech stack */}
       {/**projects */}
-      <div className="section-3 rounded-xl m-4 bg-white p-4">
-        <div className="m-4 font-bold text-lg">Projects</div>
-        <div>
-          {data.projects.map((project, index) => (
-            <BlogCard
-              key={index}
-              title={project.title}
-              description={project.Description}
-              link={project.link}
-              image={project.img}
-            />
+      <div className="section-3 rounded-xl m-4 bg-white p-10 ">
+        <div className="font-bold text-lg">Projects</div>
+        <div className="grid lg:grid-cols-2 max-lg:grid-cols-1 ">
+          {data.projects.slice(0, 2).map((project, index) => (
+            <div className="lg:col-span-1" key={index}>
+              <BlogCard
+                key={index}
+                title={project.title}
+                description={project.Description}
+                link={project.link}
+                image={project.img}
+                lang={project.lang}
+              />
+            </div>
           ))}
         </div>
         <div className="m-4 text-xs text-right text-gray-400">
           <Link href="/work">See more </Link>
         </div>
       </div>
+      {/**values */}
     </>
   );
 };
