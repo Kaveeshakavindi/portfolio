@@ -1,358 +1,455 @@
 {
-    "projects": [
-        {
-            "title": "Cafe Flair",
-            "Description": "This Coffee Shop Ordering System is a multithreaded application",
-            "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem",
-            "img": "/images/flair.png",
-            "lang": "swift",
-            "year": "2024",
-            "tags": ["swift", "java", "multithreading", "vapor"]
-        },
-        {
-            "title": "Online Banking",
-            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
-            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
-            "img" : "/images/flair.png",
-            "lang": "java",
-            "year": "2024",
-            "tags": ["multithreading", "java"]
-        },
-        {
-            "title": "Online Banking",
-            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
-            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
-            "img" : "/images/flair.png",
-            "lang": "java",
-            "year": "2024",
-            "tags": ["multithreading", "java"]
-        }
-    ],
-    "blogs": [
-        {
-            "id": "1",
-            "title": "Fluent ORM",
-            "subtitle":"Efficient data modeling and querying with Fluent ORM",
-            "description": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries.",
-            "img": "/images/fluentorm.png",
-            "content": [
-                {
-                    "type": "text",
-                    "content": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries. Fluent supports PostgreSQL, MySQL, and SQLite.",
-                    "language": null,
-                    "code": [],
-                    "src": null,
-                    "caption": null
-                },
-                {
-                    "type": "code",
-                    "language": "bash",
-                    "code": [
-                        "brew install vapor",
-                        "vapor new FluentExample --template=api",
-                        "cd FluentExample"
-                    ],
-                    "content": null,
-                    "src": null,
-                    "caption":"Installation and create a vapor project"
-                },
-                {
-                    "type": "code",
-                    "content": null,
-                    "src": null,
-                    "caption":"Import necessary modules and set up a basic route",
-                    "language": "swift",
-                    "code": [
-                        "import Fluent",
-                        "import Vapor",
-                        "app.get { req in return \"Hello, Fluent!\" }"
-                    ]
-                }
-            ],
-            "created_at": "Thu 30 Jan 2025",
-            "category": "p",
-            "tags": ["Vapor", "Swift", "Database"]
-        },
-
-        {
-            "id": "2",
-            "title":"Tailwind CSS",
-            "subtitle": "Utility-first CSS framework for fast UI development.",
-            "description":"Tailwind CSS is a utility-first CSS framework that allows developers to design responsive, custom user interfaces without writing a lot of custom CSS. Next.js, a powerful React-based framework, makes it easy to build static and dynamic websites. Combining Tailwind CSS with Next.js allows for an efficient, streamlined workflow for building modern web applications. In this tutorial, we'll walk through the steps to set up Tailwind CSS in a Next.js project and use it to build a simple blog layout.",
-            "img": "/images/tailwind.png",
-            "content": [
-                {
-                    "type": "text",
-                    "content": "If you havent already set up a Next.js project, you can do so by running the following command in your terminal:",
-                    "language": "bash",
-                    "code": [
-                        "npx create-next-app@latest project-name"
-                    ],
-                    "src": null,
-                    "caption": "Setting Up a New Next.js Project"
-                },
-                {
-                    "type": "text",
-                    "content": "This will create a new Next.js app called tailwind-next-blog with the necessary files and directories. Once the installation is complete, navigate into your project directory:",
-                    "language": "bash",
-                    "code": [
-                        "cd project-name"
-                    ],
-                    "src": null,
-                    "caption": null
-                },
-                {
-                    "type": "text",
-                    "content": "To install Tailwind CSS, run the following commands in your terminal:",
-                    "language": "bash",
-                    "code": [
-                        "npm install tailwindcss postcss autoprefixer"
-                    ],
-                    "src": null,
-                    "caption": "Install Tailwind CSS"
-                },
-                {
-                    "type": "text",
-                    "content": null,
-                    "language": "bash",
-                    "code": [
-                        "npx tailwindcss init"
-                    ],
-                    "src": null,
-                    "caption": "Generate the tailwind.config.js file:"
-                },
-                {
-                    "type": "text",
-                    "content": "Open the tailwind.config.js file and add the following content to ensure Tailwind CSS works properly with Next.js:",
-                    "language": "js",
-                    "code": [
-                        "/** @type {import('tailwindcss').Config} */",
-                        "module.exports = {",
-                        "  content: [",
-                        "    './pages/**/*.{js,ts,jsx,tsx}',",
-                        "    './components/**/*.{js,ts,jsx,tsx}', // Add components folder if you create it later",
-                        "  ],",
-                        "  theme: {",
-                        "    extend: {},",
-                        "  },",
-                        "  plugins: [],",
-                        "}"
-                    ],
-                    "src": null,
-                    "caption":"Configure Tailwind CSS"
-                }
-            ],
-            "created_at": "Thu 30 Jan 2025",
-            "category": "p",
-            "tags": ["Vapor", "Swift", "Database"]
-        },
-        {
-            "id":"3",
-            "title":"Swift Cheat Sheet",
-            "subtitle":"Quick Reference for Developers",
-            "description":"Swift is Apple's powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development. Whether you're a beginner or an experienced developer, this cheat sheet will help you quickly recall essential Swift syntax and concepts.",
-            "img":"/images/swift.png",
-            "created_at": "Fri 31 Jan 2025",
-            "category": "p",
-            "tags": ["Swift"],
-            "content":[
-                {
-                    "type":"text",
-                    "caption":"Variables & Constants",
-                    "content":"",
-                    "code":[
-                        "var name = \"John\"  // Mutable variable",
-                        "let age = 30         // Immutable constant",
-                        "var isActive: Bool = true  // Explicit type declaration"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"text",
-                    "caption":"Data Types",
-                    "content":"",
-                    "code":[
-                        "let integer: Int = 10",
-                        "let float: Float = 10.5",
-                        "let double: Double = 20.99",
-                        "let boolean: Bool = false",
-                        "let string: String = \"Hello, Swift!\""
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Operators",
-                    "content":"",
-                    "code":[
-                        "let sum = 10 + 5      // Addition",
-                        "let difference = 10 - 5 // Subtraction",
-                        "let product = 10 * 5   // Multiplication",
-                        "let quotient = 10 / 5  // Division",
-                        "let remainder = 10 % 3 // Modulo"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Control Flow",
-                    "content":"Control flow statements allow you to manage the execution of your code by making decisions and repeating operations.",
-                    "code":[],
-                    "language":"",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"",
-                    "content":"If-Else",
-                    "code":[
-                        "if age > 18 {",
-                            "print(\"Adult\")",
-                        "} else {",
-                            "print(\"Minor\")",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"",
-                    "content":"Loops",
-                    "code":[
-                        "for i in 1...5 {",
-                            "print(i)",
-                        "}",
-
-                        "var count = 0",
-                        "while count < 5 {",
-                            "print(count)",
-                            "count += 1",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Functions",
-                    "content":"",
-                    "code":[
-                        "func greet(name: String) -> String {",
-                            "return \"Hello, \\(name)!\"",
-                        "}",
-                        "print(greet(name: \"Alice\"))"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Optionals",
-                    "content":"",
-                    "code":[
-                        "var optionalName: String? = \"Swift\"",
-                        "print(optionalName ?? \"Default Value\") // Nil-coalescing",
-
-                        "if let name = optionalName {",
-                            "print(\"Unwrapped: \\(name)\")",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Classes & Structs",
-                    "content":"",
-                    "code":[
-                        "class Person {",
-                            "var name: String",
-                            "init(name: String) {",
-                                "self.name = name",
-                            "}",
-                            "func sayHello() {",
-                                "print(\"Hello, my name is \\(name)\")",
-                            "}",
-                        "}",
-                        
-                        "let person = Person(name: \"John\")",
-                        "person.sayHello()",
-                        "struct Car {",
-                            "var brand: String",
-                            "func description() -> String {",
-                                "return \"This car is a \\(brand).\"",
-                            "}",
-                        "}",
-                        "let myCar = Car(brand: \"Tesla\")",
-                        "print(myCar.description())"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Closures",
-                    "content":"",
-                    "code":[
-                        "let add: (Int, Int) -> Int = { (a, b) in",
-                            "return a + b",
-                        "}",
-                        "print(add(3, 5))"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Enumerations",
-                    "content":"",
-                    "code":[
-                        "enum CompassDirection {",
-                            "case north, south, east, west",
-                        "}",
-                        "let direction = CompassDirection.north"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Protocols",
-                    "content":"",
-                    "code":[
-                        "protocol Vehicle {",
-                            "var speed: Int { get set }",
-                            "func move()",
-                        "}",
-                        "class Bicycle: Vehicle {",
-                            "var speed = 20",
-                            "func move() {",
-                                "print(\"Moving at \\(speed) km/h\")",
-                            "}",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                }
-            ]
-        }
-],
-"experiences":[
+  "projects": [
     {
-        "employer":"Seylan Bank PLC",
-        "position": "Junior Software Engineer",
-        "date": "September 2024 - Present",
-        "description": "Contributed in both backend and frontend developement based on .Net, C#, ReactJS in various projects."
+      "title": "Cafe Flair",
+      "Description": "This Coffee Shop Ordering System is a multithreaded application",
+      "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem",
+      "img": "/images/flair.png",
+      "lang": "swift",
+      "year": "2024",
+      "tags": [
+        "swift",
+        "java",
+        "multithreading",
+        "vapor"
+      ]
     },
     {
-        "employer":"Axiata Digital Labs",
-        "position": "Mobile Engineering Intern",
-        "date":"July 2023 - June 2024",
-        "description": "Contributed in mobile app developemnt based on React Native, Redux and TypeScript."
+      "title": "Online Banking",
+      "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
+      "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
+      "img": "/images/flair.png",
+      "lang": "java",
+      "year": "2024",
+      "tags": [
+        "multithreading",
+        "java"
+      ]
+    },
+    {
+      "title": "Online Banking",
+      "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
+      "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
+      "img": "/images/flair.png",
+      "lang": "java",
+      "year": "2024",
+      "tags": [
+        "multithreading",
+        "java"
+      ]
     }
-]
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Fluent ORM",
+      "subtitle": "Efficient data modeling and querying with Fluent ORM",
+      "description": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries.",
+      "img": "/images/fluentorm.png",
+      "content": [
+        {
+          "type": "text",
+          "content": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries. Fluent supports PostgreSQL, MySQL, and SQLite.",
+          "language": null,
+          "code": [],
+          "src": null,
+          "caption": null
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "code": [
+            "brew install vapor",
+            "vapor new FluentExample --template=api",
+            "cd FluentExample"
+          ],
+          "content": null,
+          "src": null,
+          "caption": "Installation and create a vapor project"
+        },
+        {
+          "type": "code",
+          "content": null,
+          "src": null,
+          "caption": "Import necessary modules and set up a basic route",
+          "language": "swift",
+          "code": [
+            "import Fluent",
+            "import Vapor",
+            "app.get { req in return \"Hello, Fluent!\" }"
+          ]
+        }
+      ],
+      "created_at": "Thu 30 Jan 2025",
+      "category": "p",
+      "tags": [
+        "Vapor",
+        "Swift",
+        "Database"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Tailwind CSS",
+      "subtitle": "Utility-first CSS framework for fast UI development.",
+      "description": "Tailwind CSS is a utility-first CSS framework that allows developers to design responsive, custom user interfaces without writing a lot of custom CSS. Next.js, a powerful React-based framework, makes it easy to build static and dynamic websites. Combining Tailwind CSS with Next.js allows for an efficient, streamlined workflow for building modern web applications. In this tutorial, we'll walk through the steps to set up Tailwind CSS in a Next.js project and use it to build a simple blog layout.",
+      "img": "/images/tailwind.png",
+      "content": [
+        {
+          "type": "text",
+          "content": "If you havent already set up a Next.js project, you can do so by running the following command in your terminal:",
+          "language": "bash",
+          "code": [
+            "npx create-next-app@latest project-name"
+          ],
+          "src": null,
+          "caption": "Setting Up a New Next.js Project"
+        },
+        {
+          "type": "text",
+          "content": "This will create a new Next.js app called tailwind-next-blog with the necessary files and directories. Once the installation is complete, navigate into your project directory:",
+          "language": "bash",
+          "code": [
+            "cd project-name"
+          ],
+          "src": null,
+          "caption": null
+        },
+        {
+          "type": "text",
+          "content": "To install Tailwind CSS, run the following commands in your terminal:",
+          "language": "bash",
+          "code": [
+            "npm install tailwindcss postcss autoprefixer"
+          ],
+          "src": null,
+          "caption": "Install Tailwind CSS"
+        },
+        {
+          "type": "text",
+          "content": null,
+          "language": "bash",
+          "code": [
+            "npx tailwindcss init"
+          ],
+          "src": null,
+          "caption": "Generate the tailwind.config.js file:"
+        },
+        {
+          "type": "text",
+          "content": "Open the tailwind.config.js file and add the following content to ensure Tailwind CSS works properly with Next.js:",
+          "language": "js",
+          "code": [
+            "/** @type {import('tailwindcss').Config} */",
+            "module.exports = {",
+            "  content: [",
+            "    './pages/**/*.{js,ts,jsx,tsx}',",
+            "    './components/**/*.{js,ts,jsx,tsx}', // Add components folder if you create it later",
+            "  ],",
+            "  theme: {",
+            "    extend: {},",
+            "  },",
+            "  plugins: [],",
+            "}"
+          ],
+          "src": null,
+          "caption": "Configure Tailwind CSS"
+        }
+      ],
+      "created_at": "Thu 30 Jan 2025",
+      "category": "p",
+      "tags": [
+        "Vapor",
+        "Swift",
+        "Database"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Swift Cheat Sheet",
+      "subtitle": "Quick Reference for Developers",
+      "description": "Swift is Apple's powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development. Whether you're a beginner or an experienced developer, this cheat sheet will help you quickly recall essential Swift syntax and concepts.",
+      "img": "/images/swift.png",
+      "created_at": "Fri 31 Jan 2025",
+      "category": "p",
+      "tags": [
+        "Swift"
+      ],
+      "content": [
+        {
+          "type": "text",
+          "caption": "Variables & Constants",
+          "content": "",
+          "code": [
+            "var name = \"John\"  // Mutable variable",
+            "let age = 30         // Immutable constant",
+            "var isActive: Bool = true  // Explicit type declaration"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "text",
+          "caption": "Data Types",
+          "content": "",
+          "code": [
+            "let integer: Int = 10",
+            "let float: Float = 10.5",
+            "let double: Double = 20.99",
+            "let boolean: Bool = false",
+            "let string: String = \"Hello, Swift!\""
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Operators",
+          "content": "",
+          "code": [
+            "let sum = 10 + 5      // Addition",
+            "let difference = 10 - 5 // Subtraction",
+            "let product = 10 * 5   // Multiplication",
+            "let quotient = 10 / 5  // Division",
+            "let remainder = 10 % 3 // Modulo"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Control Flow",
+          "content": "Control flow statements allow you to manage the execution of your code by making decisions and repeating operations.",
+          "code": [],
+          "language": "",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "",
+          "content": "If-Else",
+          "code": [
+            "if age > 18 {",
+            "print(\"Adult\")",
+            "} else {",
+            "print(\"Minor\")",
+            "}"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "",
+          "content": "Loops",
+          "code": [
+            "for i in 1...5 {",
+            "print(i)",
+            "}",
+            "var count = 0",
+            "while count < 5 {",
+            "print(count)",
+            "count += 1",
+            "}"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Functions",
+          "content": "",
+          "code": [
+            "func greet(name: String) -> String {",
+            "return \"Hello, \\(name)!\"",
+            "}",
+            "print(greet(name: \"Alice\"))"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Optionals",
+          "content": "",
+          "code": [
+            "var optionalName: String? = \"Swift\"",
+            "print(optionalName ?? \"Default Value\") // Nil-coalescing",
+            "if let name = optionalName {",
+            "print(\"Unwrapped: \\(name)\")",
+            "}"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Classes & Structs",
+          "content": "",
+          "code": [
+            "class Person {",
+            "var name: String",
+            "init(name: String) {",
+            "self.name = name",
+            "}",
+            "func sayHello() {",
+            "print(\"Hello, my name is \\(name)\")",
+            "}",
+            "}",
+            "let person = Person(name: \"John\")",
+            "person.sayHello()",
+            "struct Car {",
+            "var brand: String",
+            "func description() -> String {",
+            "return \"This car is a \\(brand).\"",
+            "}",
+            "}",
+            "let myCar = Car(brand: \"Tesla\")",
+            "print(myCar.description())"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Closures",
+          "content": "",
+          "code": [
+            "let add: (Int, Int) -> Int = { (a, b) in",
+            "return a + b",
+            "}",
+            "print(add(3, 5))"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Enumerations",
+          "content": "",
+          "code": [
+            "enum CompassDirection {",
+            "case north, south, east, west",
+            "}",
+            "let direction = CompassDirection.north"
+          ],
+          "language": "swift",
+          "src": ""
+        },
+        {
+          "type": "",
+          "caption": "Protocols",
+          "content": "",
+          "code": [
+            "protocol Vehicle {",
+            "var speed: Int { get set }",
+            "func move()",
+            "}",
+            "class Bicycle: Vehicle {",
+            "var speed = 20",
+            "func move() {",
+            "print(\"Moving at \\(speed) km/h\")",
+            "}",
+            "}"
+          ],
+          "language": "swift",
+          "src": ""
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "FinTech Innovation: A Scrum Success Story",
+      "subtitle": "Agile Transformation in Loan Processing",
+      "description": "LendTech, a mid-sized financial company, successfully implemented Scrum to develop a modern loan processing system. This case study highlights the team's journey, challenges, and key learnings.",
+      "img": "/images/scrum.png",
+      "created_at": "Fri 31 Jan 2025",
+      "category": "p",
+      "tags": [
+        "Scrum",
+        "Agile",
+        "FinTech"
+      ],
+      "content": [
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Project Context",
+          "content": "LendTech needed to develop a new loan processing system to replace their legacy software within a 6-month timeframe. The team consisted of 8 developers with a structured Scrum approach."
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "The Scrum Team",
+          "content": "Product Owner: Sarah Chen - Former loan officer with deep domain knowledge\nScrum Master: Miguel Rodriguez - Certified Scrum Master with 5 years of experience\nDevelopment Team:\n- 3 Full-stack developers\n- 2 Backend specialists\n- 2 Frontend developers\n- 1 QA engineer"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Initial Sprint Setup",
+          "content": "Sprint Duration: 2 weeks\nSprint Planning: 4 hours\nDaily Scrum: 15 minutes, 9:30 AM\nSprint Review: 2 hours\nSprint Retrospective: 1.5 hours"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Unexpected Challenges and Solutions",
+          "content": "\nChallenge 1: Regulatory Change (Sprint 2)\n- Emergency Product Backlog refinement session called\n- Product Owner reprioritized backlog to align with compliance\n- Sprint Goal adjusted while maintaining delivery value\n\nChallenge 2: Key Developer's Extended Leave (Sprint 4)\n- Daily Scrums enhanced knowledge sharing\n- Cross-functional team members covered key responsibilities\n- Documentation became a priority\n\nChallenge 3: Performance Issues (Sprint 7)\n- Issue raised in Daily Scrum for transparency\n- Sprint Review included performance demonstration\n- Sprint Retrospective focused on preventing similar issues\n- Developers self-organized into pairs to solve performance bottlenecks"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Success Factors",
+          "content": "1. Strong Scrum Values\n   - Commitment: Sustainable pace maintained despite extra effort\n   - Courage: Developers openly discussed risks\n   - Focus: Scrum Master shielded team from distractions\n   - Openness: Daily stand-ups provided transparency\n   - Respect: Team members supported each other\n\n2. Effective Artifact Management\n   - Product Backlog refined regularly\n   - Sprint Backlog updated daily\n   - Definition of Done evolved to include performance benchmarks\n   - Increments delivered working software each sprint\n\n3. Ceremony Effectiveness\n   - Sprint Planning became more efficient over time\n   - Daily Scrums remained concise and goal-oriented\n   - Sprint Reviews engaged stakeholders effectively\n   - Retrospectives led to actionable improvements"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Project Outcomes",
+          "content": "- System delivered on time despite multiple setbacks\n- All regulatory requirements met\n- Performance issues resolved before launch\n- Team velocity increased by 40% from first to final sprint\n- Customer satisfaction exceeded expectations"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Key Learnings",
+          "content": "- Scrum framework provided structure during uncertainty\n- Self-organization enabled quick problem resolution\n- Regular inspection and adaptation prevented major issues\n- Transparency built trust with stakeholders\n- Cross-functional team played a crucial role in project resilience"
+        },
+        {
+          "type": "text",
+          "language": null,
+          "code": null,
+          "src": null,
+          "caption": "Conclusion",
+          "content": "The project's success amid multiple challenges demonstrated Scrum's effectiveness in handling uncertainty. The framework's emphasis on empiricism allowed the team to inspect and adapt through each challenge while maintaining productivity and quality."
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "employer": "Seylan Bank PLC",
+      "position": "Junior Software Engineer",
+      "date": "September 2024 - Present",
+      "description": "Contributed in both backend and frontend developement based on .Net, C#, ReactJS in various projects."
+    },
+    {
+      "employer": "Axiata Digital Labs",
+      "position": "Mobile Engineering Intern",
+      "date": "July 2023 - June 2024",
+      "description": "Contributed in mobile app developemnt based on React Native, Redux and TypeScript."
+    }
+  ]
 }
