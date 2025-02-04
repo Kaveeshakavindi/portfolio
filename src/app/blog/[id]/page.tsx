@@ -32,7 +32,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   }
 
   return (
-    <div className="flex flex-col items-center p-[2rem]">
+    <div className="flex flex-col items-center p-[2rem] p-4 rounded-3xl  bg-white m-4">
       <div className="bg-slate-200 px-5 py-2 rounded-3xl inline-block my-4 text-xs text-slate-500">
         source
       </div>
@@ -40,11 +40,14 @@ export default function BlogPage({ params }: BlogPageProps) {
       <div className="py-4 text-xs text-gray-400">{blog.created_at}</div>
       <Image src={blog.img} alt="blog" height={100} width={100} />
 
-      <div className="grid grid-cols-4 gap-20 w-full">
+      <div className="grid md:grid-cols-4 gap-20 w-full">
         <div className="col-span-1 ">
-          <ul className="fixed  max-lg:w-[150px] lg:w-full">
+          <ul className="fixed max-lg:w-[150px] lg:w-full top-[250px]">
             {blog.content.map((item, index) => (
-              <li className="text-xs pb-2 text-slate-400" key={index}>
+              <li
+                className="max-md:hidden text-xs pb-2 text-slate-400"
+                key={index}
+              >
                 {item.caption}
               </li>
             ))}
@@ -53,7 +56,7 @@ export default function BlogPage({ params }: BlogPageProps) {
 
         <div className="col-span-3">
           {blog.content.map((item, index) => (
-            <div key={index} className="px-10 text-justify">
+            <div key={index} className=" text-justify">
               <p className="text-justify text-sm text-gray-500 pt-10 pb-1">
                 {item?.caption}
               </p>

@@ -2,15 +2,30 @@
     "projects": [
         {
             "title": "Cafe Flair",
-            "Description": "This Coffee Shop Ordering System is a multithreaded application to streamline daily operations, including customer orders, inventory management, employee scheduling, and sales tracking. Built with Java, it uses multithreading for tasks like order processing, inventory updates.",
+            "Description": "This Coffee Shop Ordering System is a multithreaded application",
             "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem",
-            "img": "/images/cafeflair.png"
+            "img": "/images/flair.png",
+            "lang": "swift",
+            "year": "2024",
+            "tags": ["swift", "java", "multithreading", "vapor"]
         },
         {
-            "title": "Banking Transaction System",
-            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. It supports simultaneous transactions like deposits, withdrawals, and balance inquiries using multithreading, ensuring efficient handling and smooth operation during peak times.",
+            "title": "Online Banking",
+            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
             "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
-            "img" : "/images/cafeflair.png"
+            "img" : "/images/flair.png",
+            "lang": "java",
+            "year": "2024",
+            "tags": ["multithreading", "java"]
+        },
+        {
+            "title": "Online Banking",
+            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
+            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
+            "img" : "/images/flair.png",
+            "lang": "java",
+            "year": "2024",
+            "tags": ["multithreading", "java"]
         }
     ],
     "blogs": [
@@ -55,8 +70,8 @@
                 }
             ],
             "created_at": "Thu 30 Jan 2025",
-            "category": "p",
-            "tags": ["Fluent ORM", "Vapor", "Swift", "Database"]
+            "category": "Programming",
+            "tags": ["Vapor", "Swift"]
         },
 
         {
@@ -128,8 +143,8 @@
                 }
             ],
             "created_at": "Thu 30 Jan 2025",
-            "category": "p",
-            "tags": ["Fluent ORM", "Vapor", "Swift", "Database"]
+            "category": "Programming",
+            "tags": ["Vapor", "Swift"]
         },
         {
             "id":"3",
@@ -138,8 +153,8 @@
             "description":"Swift is Apple's powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development. Whether you're a beginner or an experienced developer, this cheat sheet will help you quickly recall essential Swift syntax and concepts.",
             "img":"/images/swift.png",
             "created_at": "Fri 31 Jan 2025",
-            "category": "p",
-            "tags": ["Swift", "Variables", "Data types"],
+            "category": "Programming",
+            "tags": ["Swift"],
             "content":[
                 {
                     "type":"text",
@@ -324,27 +339,20 @@
                     "src":""
                 }
             ]
-        },
-        {
-            "id":"4",
-            "title":"",
-            "subtitle":"",
-            "description":"",
-            "img":"",
-            "created_at": "Fri 31 Jan 2025",
-            "updated_at": "",
-            "tags": [],
-            "content":[
-                {
-                    "type":"",
-                    "caption":"",
-                    "content":"",
-                    "code":[],
-                    "language":"",
-                    "src":""
-                }
-            ]
         }
+],
+"experiences":[
+    {
+        "employer":"Seylan Bank PLC",
+        "position": "Junior Software Engineer",
+        "date": "September 2024 - Present",
+        "description": "Contributed in both backend and frontend developement based on .Net, C#, ReactJS in various projects."
+    },
+    {
+        "employer":"Axiata Digital Labs",
+        "position": "Mobile Engineering Intern",
+        "date":"July 2023 - June 2024",
+        "description": "Contributed in mobile app developemnt based on React Native, Redux and TypeScript."
+    }
 ]
-
 }
