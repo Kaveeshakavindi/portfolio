@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className=" flex flex-col  p-[2rem] p-4 rounded-3xl m-4 bg-white ">
+    <div className="flex flex-col  p-[2rem] p-4 rounded-3xl m-4 bg-white ">
       <div className="grid md:grid-cols-2  w-full gap-4 ">
         {data.projects.map((project, index) => (
           <div
@@ -37,7 +37,7 @@ const page = () => {
             </div>
             <a
               href={project.link}
-              className="text-white bg-black rounded-lg text-center text-black border border-black text-sm font-bold py-3 my-4 hover:bg-gray-50 hover:text-black lg:w-[50%]"
+              className="bg-blue-500 rounded-lg text-center text-white border border-blue-500 text-sm font-bold py-3 my-4 hover:bg-blue-100 hover:text-blue-500 lg:w-[50%]"
             >
               <i className="devicon-github-original pr-2 "></i>View Code
             </a>

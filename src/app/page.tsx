@@ -39,8 +39,8 @@ const Page = () => {
       </div>
       {/**Blogs */}
       <div className="section-3 rounded-xl m-4 bg-white p-10">
-        <div className="m-4 font-bold text-lg">Blogs</div>
-        <div className="grid  max-md:grid-cols-1 max-lg:grid-cols-3 lg:grid-cols-3 gap-4 ">
+        <div className="m-4 font-bold text-lg py-4">Blogs</div>
+        <div className="grid  max-md:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {data.blogs.slice(0, 3).map((blog, index) => (
             <MiniCard
               key={index}
@@ -58,14 +58,14 @@ const Page = () => {
       </div>
       {/**expereince */}
       <div className="section-3 rounded-xl m-4 bg-white p-10">
-        <div className="m-4 font-bold text-lg">Experience</div>
+        <div className="m-4 font-bold text-lg py-4">Experience</div>
         <Timeline />
       </div>
       {/**services / tech stack */}
       {/**projects */}
       <div className="section-3 rounded-xl m-4 bg-white p-10 ">
-        <div className="font-bold text-lg">Projects</div>
-        <div className="grid lg:grid-cols-2 max-lg:grid-cols-1 ">
+        <div className="font-bold text-lg py-4">Projects</div>
+        <div className="grid gap-4 lg:grid-cols-2 max-lg:grid-cols-1 ">
           {data.projects.slice(0, 2).map((project, index) => (
             <div className="lg:col-span-1" key={index}>
               <BlogCard

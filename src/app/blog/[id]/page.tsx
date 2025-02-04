@@ -32,7 +32,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   }
 
   return (
-    <div className="flex flex-col items-center p-[2rem] p-4 rounded-3xl  bg-white">
+    <div className="flex flex-col items-center p-[2rem] p-4 rounded-3xl  bg-white m-4">
       <div className="bg-slate-200 px-5 py-2 rounded-3xl inline-block my-4 text-xs text-slate-500">
         source
       </div>

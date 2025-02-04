@@ -17,12 +17,12 @@ const blogCard: React.FC<BlogCardProps> = ({
   lang,
 }) => {
   return (
-    <a href={link}>
-      <div className="flex items-center border border-slate-200 bg-slate-50 h-[12rem] rounded-lg flex relative m-4 p-5 hover:shadow-md hover:shadow-blue-400/20">
+    <div className="flex flex-col justify-center border border-slate-200 bg-slate-50 h-[12rem] rounded-lg relative hover:shadow-md hover:shadow-blue-400/20">
+      <div className="w-full p-4">
         <div className="rounded-lg flex relative ">
-          <div className="h-full flex m-1 p-4 flex-col">
-            <p className="uppercase text-[10px] font-bold pb-2 text-indigo-500">
-              built with {lang}
+          <div className="h-full flex flex-col">
+            <p className="uppercase text-[10px] font-bold pb-2 text-gray-400">
+              {lang}
             </p>
             <h1 className="text-sm font-bold flex text-left w-full">{title}</h1>
             <p className="text-justify text-xs text-gray-400 py-[3px]">
@@ -31,7 +31,13 @@ const blogCard: React.FC<BlogCardProps> = ({
           </div>
         </div>
       </div>
-    </a>
+      <a
+        className="p-4 text-left text-xs text-blue-500 font-bold hover:text-blue-300"
+        href={link}
+      >
+        View Code
+      </a>
+    </div>
   );
 };
 
