@@ -19,7 +19,7 @@ const miniCard: React.FC<miniCardProps> = ({
   return (
     <Link className="" href={`/blog/${id}`}>
       <div className="border border-slate-200 bg-slate-50 rounded-lg p-10 text-left w-full md:h-[50vh] flex flex-col justify-between hover:shadow-md hover:shadow-blue-400/20">
-        <div className="text-gray-400 text-xs">source</div>
+        <div className="text-gray-400 text-md">source</div>
         <div className="text-black font-bold text-lg py-2">{title}</div>
         <div className="flex justify-center p-10 ">
           <Image
@@ -30,8 +30,8 @@ const miniCard: React.FC<miniCardProps> = ({
             className="rounded-lg"
           />
         </div>
-        <div className="text-gray-400 text-xs py-3">{description}</div>
-        <div className="flex text-xs overflow-wrap ">
+        <div className="text-gray-400 text-md py-3">{description}</div>
+        <div className="flex text-md flex-wrap ">
           {tags.map((item, index) => (
             <div
               key={index}
