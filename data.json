@@ -2,80 +2,512 @@
     "projects": [
         {
             "title": "Cafe Flair",
-            "Description": "This Coffee Shop Ordering System is a multithreaded application",
-            "link": "https://github.com/Kaveeshakavindi/CoffeeShopOrderingSystem",
+            "Description": "Swift, Vapor, Fluent ORM, Postgres SQL and AWS S3 bucket based online coffee ordering ios mobile application.",
+            "link": "https://github.com/Kaveeshakavindi/CafeFlair",
             "img": "/images/flair.png",
             "lang": "swift",
             "year": "2024",
-            "tags": ["swift", "java", "multithreading", "vapor"]
+            "tags": ["swift", "vapor", "AWS S3 bucket"]
         },
         {
-            "title": "Online Banking",
+            "title": "Multithreaded Banking Transaction System",
             "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
             "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
-            "img" : "/images/flair.png",
+            "img" : "/images/bts.png",
             "lang": "java",
             "year": "2024",
             "tags": ["multithreading", "java"]
         },
         {
-            "title": "Online Banking",
-            "Description": "The Multithreaded Banking Transaction System is a Java app that simulates a real-world banking environment. ",
-            "link": "https://github.com/Kaveeshakavindi/BankingTransactionSystem",
-            "img" : "/images/flair.png",
+            "title": "Claract Skin",
+            "Description": "A MERN stack web application based on a skin care brand.",
+            "link": "https://github.com/Kaveeshakavindi/claract-client",
+            "img" : "/images/claracat.png",
             "lang": "java",
             "year": "2024",
             "tags": ["multithreading", "java"]
         }
     ],
     "blogs": [
+        
+            {
+                "id":"1",
+                "title":"Swift Cheat Sheet",
+                "subtitle":"Quick Reference for Developers",
+                "description":"Swift is Apple's powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development. Whether you're a beginner or an experienced developer, this cheat sheet will help you quickly recall essential Swift syntax and concepts.",
+                "img":"/images/swift.png",
+                "created_at": "Fri 31 Jan 2025",
+                "category": "Programming",
+                "tags": ["Swift"],
+                "content":[
+                    {
+                        "type":"text",
+                        "list": null,
+                        "caption":"Variables & Constants",
+                        "content":"",
+                        "code":[
+                            "var name = \"John\"  // Mutable variable",
+                            "let age = 30         // Immutable constant",
+                            "var isActive: Bool = true  // Explicit type declaration"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"text",
+                        "list": null,
+                        "caption":"Data Types",
+                        "content":"",
+                        "code":[
+                            "let integer: Int = 10",
+                            "let float: Float = 10.5",
+                            "let double: Double = 20.99",
+                            "let boolean: Bool = false",
+                            "let string: String = \"Hello, Swift!\""
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Operators",
+                        "content":"",
+                        "code":[
+                            "let sum = 10 + 5      // Addition",
+                            "let difference = 10 - 5 // Subtraction",
+                            "let product = 10 * 5   // Multiplication",
+                            "let quotient = 10 / 5  // Division",
+                            "let remainder = 10 % 3 // Modulo"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Control Flow",
+                        "content":"Control flow statements allow you to manage the execution of your code by making decisions and repeating operations.",
+                        "code":[],
+                        "language":"",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"",
+                        "content":"If-Else",
+                        "code":[
+                            "if age > 18 {",
+                                "print(\"Adult\")",
+                            "} else {",
+                                "print(\"Minor\")",
+                            "}"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"",
+                        "content":"Loops",
+                        "code":[
+                            "for i in 1...5 {",
+                                "print(i)",
+                            "}",
+    
+                            "var count = 0",
+                            "while count < 5 {",
+                                "print(count)",
+                                "count += 1",
+                            "}"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Functions",
+                        "content":"",
+                        "code":[
+                            "func greet(name: String) -> String {",
+                                "return \"Hello, \\(name)!\"",
+                            "}",
+                            "print(greet(name: \"Alice\"))"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Optionals",
+                        "content":"",
+                        "code":[
+                            "var optionalName: String? = \"Swift\"",
+                            "print(optionalName ?? \"Default Value\") // Nil-coalescing",
+    
+                            "if let name = optionalName {",
+                                "print(\"Unwrapped: \\(name)\")",
+                            "}"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Classes & Structs",
+                        "content":"",
+                        "code":[
+                            "class Person {",
+                                "var name: String",
+                                "init(name: String) {",
+                                    "self.name = name",
+                                "}",
+                                "func sayHello() {",
+                                    "print(\"Hello, my name is \\(name)\")",
+                                "}",
+                            "}",
+                            
+                            "let person = Person(name: \"John\")",
+                            "person.sayHello()",
+                            "struct Car {",
+                                "var brand: String",
+                                "func description() -> String {",
+                                    "return \"This car is a \\(brand).\"",
+                                "}",
+                            "}",
+                            "let myCar = Car(brand: \"Tesla\")",
+                            "print(myCar.description())"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Closures",
+                        "content":"",
+                        "code":[
+                            "let add: (Int, Int) -> Int = { (a, b) in",
+                                "return a + b",
+                            "}",
+                            "print(add(3, 5))"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Enumerations",
+                        "content":"",
+                        "code":[
+                            "enum CompassDirection {",
+                                "case north, south, east, west",
+                            "}",
+                            "let direction = CompassDirection.north"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    },
+                    {
+                        "type":"",
+                        "list": null,
+                        "caption":"Protocols",
+                        "content":"",
+                        "code":[
+                            "protocol Vehicle {",
+                                "var speed: Int { get set }",
+                                "func move()",
+                            "}",
+                            "class Bicycle: Vehicle {",
+                                "var speed = 20",
+                                "func move() {",
+                                    "print(\"Moving at \\(speed) km/h\")",
+                                "}",
+                            "}"
+                        ],
+                        "language":"swift",
+                        "src":""
+                    }
+                ]
+            },
+            
         {
-            "id": "1",
-            "title": "Fluent ORM",
-            "subtitle":"Efficient data modeling and querying with Fluent ORM",
-            "description": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries.",
-            "img": "/images/fluentorm.png",
+            "id": "2",
+            "title":"Let’s escalate from beginner to intermediate in GraphQL — Part I",
+            "subtitle": "GraphQL makes fetching data from an API easier, faster, and more flexible!",
+            "description":"GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. When you go to a restaurant, you don’t want the entire menu on your plate. You just order exactly what you need. GraphQL lets apps do the same but with data.",
+            "img": "/images/graphql.png",
+            "created_at": "Fri 7 Feb 2025",
+            "category": "Programming",
+            "tags": ["JavaScript", "Server", "GraphQL"],
             "content": [
                 {
-                    "type": "text",
-                    "content": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries. Fluent supports PostgreSQL, MySQL, and SQLite.",
-                    "language": null,
-                    "code": [],
-                    "src": null,
-                    "caption": null
+                    "content": "Working as a translator between your app and the database making sure your app gets the right data at the right time. Since you only get what you ask for it is faster and more efficient than traditional APIs. So, in simple terms, GraphQL makes fetching data from an API easier, faster, and more flexible! This tutorial is going to cover core concepts of GraphQL in a simple, isolated environment. You learn about schema definition, resolvers, queries, and mutations without the complexity of a full framework with caching solutions or ORMs which will be covered in the Part II of this series."
                 },
                 {
-                    "type": "code",
+                    "type":"text",
+                    "list": null,
+                    "content": "The simplest way to run a GraphQL API server is by using Express, a popular web framework for Node.js. To set it up, install the required dependencies",
                     "language": "bash",
                     "code": [
-                        "brew install vapor",
-                        "vapor new FluentExample --template=api",
-                        "cd FluentExample"
+                        "npm init",
+                        "npm install graphql --save",
+                        "npm install express graphql-http graphql"
                     ],
-                    "content": null,
-                    "src": null,
-                    "caption":"Installation and create a vapor project"
+                    "src": "/images/graphql2.jpg",
+                    "caption": "Create a new project and install GraphQL in your current directory, run"
                 },
                 {
-                    "type": "code",
-                    "content": null,
-                    "src": null,
-                    "caption":"Import necessary modules and set up a basic route",
-                    "language": "swift",
+                    "type": "text",
+                    "caption": "What is graphql-http",
+                    "content": "graphql-http is a minimal GraphQL HTTP server that processes GraphQL queries over HTTP. It serves as a bridge between the GraphQL schema and client requests.",
+                    "language": null,
+                    "code": null,
+                    "src":null,
+                    "list": null
+                },
+                {
+                    "type": "text",
+                    "caption": null,
+                    "content": "Now that we have everything installed, let’s start building our GraphQL server! We’ll create a new file called server.js in the project root. This file will be the heart of our GraphQL setup, where we'll define how our API works. Project structure looks like:",
+                    "language": null,
+                    "code": null,
+                    "src":"/images/graphql3.jpg",
+                    "list": null
+                },
+                {
+                    "type": "text",
+                    "content": "This server.js configures how our GraphQL server runs. server.js includes the following key components ;",
+                    "list": ["Schema", "Resolvers", "GraphiQL", "Express Server"]
+                },
+                {
+                    "type": "text",
+                    "content": "As we learn and define each component, we’ll gradually construct our server.js file."
+                },
+                {
+                    "caption": "Step 1 : Construct a schema using Graphql schema language",
+                    "content": "A schema defines a structure and types of data that can be queried or mutated. This graphql schema language supports the scalar types of String, Int, Float, Boolean, ID. by default every type is nullable. To indicate not nullable we use ! (eg: String!). It also supports list types (eg: [Int]). We can also add arguments to graph ql schema. Schema contains;"
+                },
+                {
+                    "caption":"1. Queries — Defines the read operations that can be performed on data.",
                     "code": [
-                        "import Fluent",
-                        "import Vapor",
-                        "app.get { req in return \"Hello, Fluent!\" }"
+                        "type Query {",
+                        "rollDice(numDice: Int!, numSides:Int): [Int]",
+                        "getInputMessage(id: ID!) : Message",
+                        "getAllInputMessages : [Message]",
+                        "}"
                     ]
-                }
-            ],
-            "created_at": "Thu 30 Jan 2025",
-            "category": "Programming",
-            "tags": ["Vapor", "Swift"]
+                },
+                {
+                    "caption":"2. Mutations — Defines write operations to modify the data. Mutations can accept input types, return modified data, or both.",
+                    "code": [
+                        "type Mutation{",
+                        "setInputMessage(input: MessageInput) : Message",
+                        "updateInputMessage(id: ID!, input:MessageInput) : Message",
+                        "}"
+                    ]
+                },
+                {
+                    "caption": "3. Types — Types Defines the structure of data. The main types include;",
+                    "list": [
+                        "Object Types — Custom types that represent data entities (eg: User, Post).",
+                        "Scalar Types – Built-in types: String, Int, Float, Boolean and ID.",
+                        "List Types – Represent multiple values of a type (eg: [Int]).",
+                        "Non-Nullable Types – Use ! to ensure a field cannot be null (eg: String!).",
+                        "Input Types – Used for sending structured data in mutations.",
+                        "Enum Types – Define a set of allowed values (eg: Status { ACTIVE, INACTIVE } ).",
+                        "Union & Interface Types – Allow flexible type structures for complex queries."
+                    ],
+                    "code": [
+                        "type Message{",
+                        "id: ID!",
+                        "content: String",
+                        "author: String",
+                        "}"
+                    ]
+                },
+                {
+                  "caption": "Input Types — Defines the shape of input data for mutations",
+                  "code": [
+                    "input MessageInput{",
+                    "content: String",
+                    "author: String",
+                    "}"
+                  ]  
+                },
+                {
+                    "caption": "Step 2 : Resolvers",
+                    "content": "When a client sends a query to the server, the server needs to resolve each field in the query and return the appropriate data. This is where resolvers come in.",
+                    "src": "/images/graphql1.png"
+                },
+                {
+                    "content": "Imagine you’re at a restaurant . You (the client) walk in and hand your order (a GraphQL query) to the waiter (server). Now, the kitchen (database) has all the ingredients (data), but it doesn’t know what to serve you until the chef (resolver) prepares the dish. The chef reads your order, gets the right ingredients from the kitchen, cooks the meal, and then the waiter serves it to you. Without resolvers, the server wouldn’t know how to get the right data when a query is made. Resolvers ensure the client gets exactly what they requested."
+                },
+                {
+                    "content": "In our code, the in-memory database (fakedb) helps you understand data persistence concepts without database setup overhead.",
+                    "language": "javascript",
+                    "code": [
+                        "var fakedb = {}",
+
+                        "//The rootValue provides a resolver function for each API endpoint",
+                        "var root = {",
+
+                        "//When a resolver takes arguments, they are passed as one “args” object, as the first argument to the function.",
+                        "rollDice ({ numDice, numSides }) {",
+                        "var output = []",
+                        "for (var i = 0; i < numDice; i++) {",
+                            "output.push(1 + Math.floor(Math.random() * (numSides || 6)))",
+                        "}",
+                        "return output",
+                        "},",
+
+                        "getInputMessage ({ id }) {",
+                        "if (!fakedb[id]) {",
+                            "throw new Error('no message exists with id ' + id)",
+                        "}",
+                        "return new Message(id, fakedb[id])",
+                        "},",
+
+                        "setInputMessage ({ input }) {",
+                        "var id = require('crypto').randomBytes(10).toString('hex')",
+                        "fakedb[id] = input",
+                        "return new Message(id, input)",
+                        "},",
+
+                        "updateInputMessage ({ id, input }) {",
+                        "if (!fakedb[id]) {",
+                            "throw new Error('no message exists with id' + id)",
+                        "}",
+                        "//this replaces old data, but some apps might want partial update",
+                        "fakedb[id] = input",
+                        "return new Message(id, input)",
+                        "},"
+                    ]
+                },
+                {
+                    "caption": "Step 3 : Now you can use the GraphiQL IDE tool to issue GraphQL queries directly in the browser",
+                    "content": "Install GraphiQL in the project directory",
+                    "language": "bash",
+                    "code": [
+                        "npm install --save ruru"
+                    ]
+                },
+                {
+                    "language": "javascript",
+                    "code": [
+                        "app.get('/', (_req, res) => {",
+                        "res.type('html')",
+                        "res.end(ruruHTML({ endpoint: '/graphql' }))",
+                        "})"
+                    ]
+                },
+                {
+                    "content": "After starting the server, if you navigate to http://localhost:4000, you should see an interface that lets you enter queries"
+                },
+                {
+                    "caption": "Step 4: Finally let’s start the server",
+                    "language": "javascript",
+                    "code": [
+                        "app.listen(4000)",
+                        "console.log('running a graphql api server at http://localhost:4000/graphql')"
+                    ]
+                },
+                {
+                    "content": "Start the server using,",
+                    "language": "bash",
+                    "code":[ "node server.js"]
+                },
+                {
+                    "content": "Complete server.js",
+                    "language": "javascript",
+                    "code": [
+                      "var { graphql, buildSchema } = require('graphql');",
+                      "var express = require('express');",
+                      "var { createHandler } = require('graphql-http/lib/use/express');",
+                      "var { ruruHTML } = require('ruru/server');",
+                      "",
+                      "var fakedb = {};",
+                      "",
+                      "var schema = buildSchema(`",
+                      "  input MessageInput {",
+                      "    content: String",
+                      "    author: String",
+                      "  }",
+                      "  type Message {",
+                      "    id: ID!",
+                      "    content: String",
+                      "    author: String",
+                      "  }",
+                      "  type Query {",
+                      "    rollDice(numDice: Int!, numSides: Int): [Int]",
+                      "    getInputMessage(id: ID!): Message",
+                      "  }",
+                      "  type Mutation {",
+                      "    setInputMessage(input: MessageInput): Message",
+                      "    updateInputMessage(id: ID!, input: MessageInput): Message",
+                      "  }",
+                      "`);",
+                      "",
+                      "// Define Message class",
+                      "class Message {",
+                      "  constructor(id, { content, author }) {",
+                      "    this.id = id;",
+                      "    this.content = content;",
+                      "    this.author = author;",
+                      "  }",
+                      "}",
+                      "",
+                      "var root = {",
+                      "  rollDice({ numDice, numSides }) {",
+                      "    var output = [];",
+                      "    for (var i = 0; i < numDice; i++) {",
+                      "      output.push(1 + Math.floor(Math.random() * (numSides || 6)));",
+                      "    }",
+                      "    return output;",
+                      "  },",
+                      "  getInputMessage({ id }) {",
+                      "    if (!fakedb[id]) {",
+                      "      throw new Error('No message exists with id ' + id);",
+                      "    }",
+                      "    return new Message(id, fakedb[id]);",
+                      "  },",
+                      "  setInputMessage({ input }) {",
+                      "    var id = require('crypto').randomBytes(10).toString('hex');",
+                      "    fakedb[id] = input;",
+                      "    return new Message(id, input);",
+                      "  },",
+                      "  updateInputMessage({ id, input }) {",
+                      "    if (!fakedb[id]) {",
+                      "      throw new Error('No message exists with id ' + id);",
+                      "    }",
+                      "    fakedb[id] = input;",
+                      "    return new Message(id, input);",
+                      "  }",
+                      "};",
+                      "",
+                      "var app = express();",
+                      "",
+                      "app.all('/graphql', createHandler({ schema, rootValue: root }));",
+                      "",
+                      "app.get('/', (_req, res) => {",
+                      "  res.type('html');",
+                      "  res.end(ruruHTML({ endpoint: '/graphql' }));",
+                      "});",
+                      "",
+                      "app.listen(4000, () => console.log('Running a GraphQL API server at http://localhost:4000/graphql'));"
+                    ]
+                  }
+            ]
         },
 
         {
-            "id": "2",
+            "id": "3",
             "title":"Tailwind CSS",
             "subtitle": "Utility-first CSS framework for fast UI development.",
             "description":"Tailwind CSS is a utility-first CSS framework that allows developers to design responsive, custom user interfaces without writing a lot of custom CSS. Next.js, a powerful React-based framework, makes it easy to build static and dynamic websites. Combining Tailwind CSS with Next.js allows for an efficient, streamlined workflow for building modern web applications. In this tutorial, we'll walk through the steps to set up Tailwind CSS in a Next.js project and use it to build a simple blog layout.",
@@ -85,44 +517,49 @@
                     "type": "text",
                     "content": "If you havent already set up a Next.js project, you can do so by running the following command in your terminal:",
                     "language": "bash",
+                    "list": null,
                     "code": [
                         "npx create-next-app@latest project-name"
                     ],
-                    "src": null,
+                    "src":"",
                     "caption": "Setting Up a New Next.js Project"
                 },
                 {
                     "type": "text",
+                    "list": null,
                     "content": "This will create a new Next.js app called tailwind-next-blog with the necessary files and directories. Once the installation is complete, navigate into your project directory:",
                     "language": "bash",
                     "code": [
                         "cd project-name"
                     ],
-                    "src": null,
+                    "src":"",
                     "caption": null
                 },
                 {
                     "type": "text",
+                    "list": null,
                     "content": "To install Tailwind CSS, run the following commands in your terminal:",
                     "language": "bash",
                     "code": [
                         "npm install tailwindcss postcss autoprefixer"
                     ],
-                    "src": null,
+                    "src":"",
                     "caption": "Install Tailwind CSS"
                 },
                 {
                     "type": "text",
+                    "list": null,
                     "content": null,
                     "language": "bash",
                     "code": [
                         "npx tailwindcss init"
                     ],
-                    "src": null,
+                    "src":"",
                     "caption": "Generate the tailwind.config.js file:"
                 },
                 {
                     "type": "text",
+                    "list": null,
                     "content": "Open the tailwind.config.js file and add the following content to ensure Tailwind CSS works properly with Next.js:",
                     "language": "js",
                     "code": [
@@ -138,7 +575,7 @@
                         "  plugins: [],",
                         "}"
                     ],
-                    "src": null,
+                    "src":"",
                     "caption":"Configure Tailwind CSS"
                 }
             ],
@@ -147,198 +584,51 @@
             "tags": ["Vapor", "Swift"]
         },
         {
-            "id":"3",
-            "title":"Swift Cheat Sheet",
-            "subtitle":"Quick Reference for Developers",
-            "description":"Swift is Apple's powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development. Whether you're a beginner or an experienced developer, this cheat sheet will help you quickly recall essential Swift syntax and concepts.",
-            "img":"/images/swift.png",
-            "created_at": "Fri 31 Jan 2025",
-            "category": "Programming",
-            "tags": ["Swift"],
-            "content":[
+            "id": "4",
+            "title": "Fluent ORM",
+            "subtitle":"Efficient data modeling and querying with Fluent ORM",
+            "description": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries.",
+            "img": "/images/fluentorm.png",
+            "content": [
                 {
-                    "type":"text",
-                    "caption":"Variables & Constants",
-                    "content":"",
-                    "code":[
-                        "var name = \"John\"  // Mutable variable",
-                        "let age = 30         // Immutable constant",
-                        "var isActive: Bool = true  // Explicit type declaration"
-                    ],
-                    "language":"swift",
-                    "src":""
+                    "type": "text",
+                    "content": "Fluent ORM is an Object-Relational Mapper (ORM) used in Vapor, a Swift-based web framework. It allows you to interact with databases using Swift code instead of raw SQL queries. Fluent supports PostgreSQL, MySQL, and SQLite.",
+                    "language": null,
+                    "code": [],
+                    "src":"",
+                    "list": null,
+                    "caption": null
                 },
                 {
-                    "type":"text",
-                    "caption":"Data Types",
-                    "content":"",
-                    "code":[
-                        "let integer: Int = 10",
-                        "let float: Float = 10.5",
-                        "let double: Double = 20.99",
-                        "let boolean: Bool = false",
-                        "let string: String = \"Hello, Swift!\""
+                    "type": "code",
+                    "language": "bash",
+                    "code": [
+                        "brew install vapor",
+                        "vapor new FluentExample --template=api",
+                        "cd FluentExample"
                     ],
-                    "language":"swift",
-                    "src":""
+                    "content": null,
+                    "src":"",
+                    "list": null,
+                    "caption":"Installation and create a vapor project"
                 },
                 {
-                    "type":"",
-                    "caption":"Operators",
-                    "content":"",
-                    "code":[
-                        "let sum = 10 + 5      // Addition",
-                        "let difference = 10 - 5 // Subtraction",
-                        "let product = 10 * 5   // Multiplication",
-                        "let quotient = 10 / 5  // Division",
-                        "let remainder = 10 % 3 // Modulo"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Control Flow",
-                    "content":"Control flow statements allow you to manage the execution of your code by making decisions and repeating operations.",
-                    "code":[],
-                    "language":"",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"",
-                    "content":"If-Else",
-                    "code":[
-                        "if age > 18 {",
-                            "print(\"Adult\")",
-                        "} else {",
-                            "print(\"Minor\")",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"",
-                    "content":"Loops",
-                    "code":[
-                        "for i in 1...5 {",
-                            "print(i)",
-                        "}",
-
-                        "var count = 0",
-                        "while count < 5 {",
-                            "print(count)",
-                            "count += 1",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Functions",
-                    "content":"",
-                    "code":[
-                        "func greet(name: String) -> String {",
-                            "return \"Hello, \\(name)!\"",
-                        "}",
-                        "print(greet(name: \"Alice\"))"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Optionals",
-                    "content":"",
-                    "code":[
-                        "var optionalName: String? = \"Swift\"",
-                        "print(optionalName ?? \"Default Value\") // Nil-coalescing",
-
-                        "if let name = optionalName {",
-                            "print(\"Unwrapped: \\(name)\")",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Classes & Structs",
-                    "content":"",
-                    "code":[
-                        "class Person {",
-                            "var name: String",
-                            "init(name: String) {",
-                                "self.name = name",
-                            "}",
-                            "func sayHello() {",
-                                "print(\"Hello, my name is \\(name)\")",
-                            "}",
-                        "}",
-                        
-                        "let person = Person(name: \"John\")",
-                        "person.sayHello()",
-                        "struct Car {",
-                            "var brand: String",
-                            "func description() -> String {",
-                                "return \"This car is a \\(brand).\"",
-                            "}",
-                        "}",
-                        "let myCar = Car(brand: \"Tesla\")",
-                        "print(myCar.description())"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Closures",
-                    "content":"",
-                    "code":[
-                        "let add: (Int, Int) -> Int = { (a, b) in",
-                            "return a + b",
-                        "}",
-                        "print(add(3, 5))"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Enumerations",
-                    "content":"",
-                    "code":[
-                        "enum CompassDirection {",
-                            "case north, south, east, west",
-                        "}",
-                        "let direction = CompassDirection.north"
-                    ],
-                    "language":"swift",
-                    "src":""
-                },
-                {
-                    "type":"",
-                    "caption":"Protocols",
-                    "content":"",
-                    "code":[
-                        "protocol Vehicle {",
-                            "var speed: Int { get set }",
-                            "func move()",
-                        "}",
-                        "class Bicycle: Vehicle {",
-                            "var speed = 20",
-                            "func move() {",
-                                "print(\"Moving at \\(speed) km/h\")",
-                            "}",
-                        "}"
-                    ],
-                    "language":"swift",
-                    "src":""
+                    "type": "code",
+                    "content": null,
+                    "src":"",
+                    "list": null,
+                    "caption":"Import necessary modules and set up a basic route",
+                    "language": "swift",
+                    "code": [
+                        "import Fluent",
+                        "import Vapor",
+                        "app.get { req in return \"Hello, Fluent!\" }"
+                    ]
                 }
-            ]
+            ],
+            "created_at": "Thu 30 Jan 2025",
+            "category": "Programming",
+            "tags": ["Vapor", "Swift"]
         }
 ],
 "experiences":[

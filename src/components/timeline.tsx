@@ -15,10 +15,10 @@ const Timeline = () => {
           <div className="max-md:text-left md:text-right block col-span-1 flex items-center md:justify-end max-md:ml-5">
             <div className="max-md:left-0 absolute left-[50%] w-[10px] h-[10px] bg-indigo-600 rounded-full -translate-x-1/2 "></div>
             <div className="shadow-sm rounded-lg bg-slate-50 p-4 mr-5 border border-slate-200">
-              <div className="text-indigo-600 text-sm font-bold ">
+              <div className="text-indigo-600 text-md font-bold ">
                 {job.position}
               </div>
-              <div className="text-xs text-indigo-400 pt-1">{job.date}</div>
+              <div className="text-md text-indigo-400 pt-1">{job.date}</div>
             </div>
           </div>
 
@@ -26,7 +26,7 @@ const Timeline = () => {
             <div className="pb-2 text-[15px] text-gray-600 font-bold">
               {job.employer}
             </div>
-            <div className="text-xs text-gray-400 py-1" key={index}>
+            <div className="text-md text-gray-400 py-1" key={index}>
               {job.description}
             </div>
           </div>
