@@ -13,7 +13,7 @@ const page = () => {
         it's Swift, Java, or just plain problem-solving, each project was a
         journey of learning, building, and having a little fun along the way.
       </div>
-      <div className="grid max-lg:grid-cols-2 lg:grid-cols-2 w-full gap-4 ">
+      <div className="grid max-md:grid-cols-1 lg:grid-cols-2 w-full gap-4 ">
         {data.projects.map((project, index) => (
           <div
             key={index}
