@@ -5,6 +5,7 @@
 :root {
   --background: #eeeeee;
   --foreground: #000000;
+  --font-space-grotesk: 'Space Grotesk', sans-serif
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +18,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 .input {
   border: 1px solid #ccc; 
